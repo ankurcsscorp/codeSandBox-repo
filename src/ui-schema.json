@@ -1,0 +1,141 @@
+{
+  "ui:page": {
+    "ui:layout": "tabs",
+    "props": {
+      "ui:schemaErrors": true
+    },
+    "style": {
+      "boxShadow": "none"
+    },
+    "tabs": {
+      "style": {
+        "width": "29vw",
+        "marginTop": 10
+      }
+    },
+    "tab": {
+      "style": {
+        "minWidth": 81
+      }
+    }
+  },
+  "string": {
+    "firstName": {
+      "ui:autofocus": true,
+      "ui:emptyValue": ""
+    },
+    "auto-complete": {
+      "ui:widget": "material-auto-complete",
+      "ui:props": {
+        "disableClearable": false
+      }
+    },
+    "react-select": {
+      "ui:widget": "material-select",
+      "ui:isClearable": true,
+      "ui:placeholder": "Example Placeholder"
+    },
+    "upload": {
+      "ui:widget": "upload",
+      "ui:props": {
+        "variant": "outlined",
+        "accept": "image/*",
+        "isMulti": true,
+        "buttonTitle": "Upload",
+        "icon": "add_circle"
+      }
+    },
+    "bio": {
+      "ui:widget": "textarea",
+      "ui:options": "rich-text-editor"
+    },
+    "password": {
+      "ui:widget": "password",
+      "ui:help": "Hint: Make it strong!",
+      "ui:validations": {
+        "minLength": {
+          "value": 3,
+          "message": "'Password' must be at least 3 characters",
+          "inline": true
+        }
+      }
+    },
+    "date": {
+      "ui:activeCompColor": "red",
+      "ui:widget": "material-date"
+    },
+    "telephone": {
+      "ui:options": {
+        "inputType": "tel"
+      },
+      "ui:validations": {
+        "minLength": {
+          "value": 10,
+          "message": "'Telephone' must be at least 10 digits",
+          "inline": true
+        }
+      }
+    }
+  },
+  "integer": {
+    "age": {
+      "ui:widget": "updown",
+      "ui:title": "Age of person",
+      "ui:description": "(earthian year)",
+      "mui:className": "money"
+    },
+    "customRating": {
+      "ui:component": "customRating",
+      "ui:interceptor": "translate-ratings",
+      "ui:options": {
+        "color": "red"
+      }
+    }
+  },
+  "number": {
+    "currency": {
+      "ui:interceptor": "translate-currency",
+      "ui:options": {
+        "useLocaleString": "nl"
+      }
+    }
+  },
+  "boolean": {
+    "radio": {
+      "ui:widget": "radio",
+      "ui:options": {
+        "row": true
+      }
+    }
+  },
+  "array": {
+    "selectTest": {
+      "ui:widget": "material-multiselect",
+      "mui:inputProps": {
+        "className": "money"
+      }
+    },
+    "autoComplete": {
+      "ui:widget": "material-auto-complete",
+      "ui:props": {
+        "disableClearable": false
+      }
+    },
+    "xhrSelectTest": {
+      "ui:widget": "material-multiselect"
+    },
+    "creatableSelectTest": {
+      "ui:widget": "creatable-select",
+      "ui:options": {
+        "optionsOnly": true
+      }
+    }
+  },
+  "object": {
+    "customComponent": {
+      "ui:component": "customComponent",
+      "ui:interceptor": "translateRangeDate",
+      "ui:options": {}
+    }
+  }
+}

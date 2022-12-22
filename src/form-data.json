@@ -1,0 +1,23 @@
+{
+  "string": {
+    "firstName": "Rahul",
+    "lastName": "Norris",
+    "upload": "",
+    "bio": "<p><u>ads</u></p>",
+    "password": "noneed",
+    "telephone": ""
+  },
+  "integer": {
+    "age": 75,
+    "customRating": 3
+  },
+  "number": {},
+  "boolean": {},
+  "array": {
+    "creatableSelectTest": ["test"],
+    "selectTest": ["Yes", "No"]
+  },
+  "object": {
+    "customComponent": ""
+  }
+}
